@@ -1,0 +1,59 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 25px auto;
+}
+
+h2 {
+  color: grey;
+  float: right;
+}
+
+.link {
+  text-decoration: none;
+}
+
+#title {
+  font-size: 50px;
+}
+
+.units {
+  font-size: 50px;
+}
+
+.temp {
+  font-size: 75px;
+}
+.info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.extra {
+  list-style-type: none;
+  font-size: 25px;
+  margin: 0 auto;
+}
+
+#description {
+  text-transform: capitalize;
+}
+
+.days {
+  font-size: 40px;
+}
+
+.card {
+  margin: 0 auto;
+}
+.card-body {
+  border-color: black;
+  border-width: thick;
+  box-sizing: border-box;
+  background: linear-gradient(
+    110.5deg,
+    rgba(240, 171, 240, 0.671) 22.8%,
+    rgba(248, 217, 190, 0.411) 64.6%
+  );
+}

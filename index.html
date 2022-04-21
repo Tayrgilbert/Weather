@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" style="width: 60rem;">
+        <div class="card-body">
+            <h1 id="city">Oak Hill</h1>
+            <h2>
+             <div id="title">
+                Weather Forcast
+              </div>
+                <form class= "input" id="search-form">
+                    <div class="search-bar">
+                    <input 
+                    type="text"
+                    placeholder="search for a city"
+                    autocomplete="off"
+                    autofocus="on"
+                    id="search-text-input"
+                    class="shadow-sm" />
+                  
+                    <input 
+                    type="submit" 
+                    value="search"
+                    class="btn btn-primary shadow-md"
+                    id="search-button" />
+                    
+                    <input 
+                    type="submit" 
+                    value="Current"
+                    class="btn btn-secondary shadow-sm" 
+                    id = "current-button"/>
+                  </div>
+                  </form>
+                  </h2>
+              <div class="info" id="date" ></div>
+              
+              <div class="row">
+                  <div class="clearfix">
+                    <div class="temp float-left">
+                     <span class="temperature" id="temperature">19</span>
+                      <span class="units">
+                         <a href="#" id="fahrenheit-link" class="link">°F</a> |
+                         <a href="#" id="celcius-link" class="link">°C</a>
+                        
+                      </span>
+              </div>  
+            </div>
+            <br />
+            <br />
+            <br />
+              <div>
+                <ul class="extra">
+                  <li id="description">Partly Cloudy</li>
+                  <li>
+                    Humidity <span id="humidity"></span></span>%</span>
+                    </li>
+                  <li>
+                  Wind <span id="wind"></span></span>mph</span>
+                  </li>
+                </ul>
+              </div>
+            <br />
+            <br />
+            <br />
+            <br />
+                </div>
+            <p class="days">
+              6 Day Forcast
+              <div class="row row-cols-6">
+                  <div class="col-2">
+                      Monday
+                      <div class = "emoji">🌧️</div>
+                      <div class = "degree">89°F</div>
+                  </div>
+                  <div class="col-2">
+                      Tuesday
+                      <div class = "emoji">🌞</div>
+                      <div class = "degree">78°F</div>
+                  </div>
+                  <div class="col-2">
+                      Wednesday
+                      <div class = "emoji">⛅</div>
+                      <div class = "degree">76°F</div>
+                  </div>
+                  <div class="col-2">
+                      Thursday
+                      <div class = "emoji">☀️</div>
+                      <div class = "degree">67°F</div>
+                  </div>
+                  <div class="col-2">
+                      Friday
+                      <div class = "emoji">⛈️</div>
+                      <div class = "degree">85°F</div>
+                  </div>
+                  <div class="col-2">
+                    Saturday
+                    <div class = "emoji">🌞</div>
+                      <div class = "degree">82°F</div>
+                </div>
+              </div>
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
