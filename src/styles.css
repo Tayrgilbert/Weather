@@ -30,10 +30,11 @@ h2 {
   padding: 0;
 }
 
-.extra {
+#extra {
   list-style-type: none;
   font-size: 25px;
-  margin: 0 auto;
+  position: absolute;
+  right: 25px;
 }
 
 #description {
@@ -56,4 +57,7 @@ h2 {
     rgba(240, 171, 240, 0.671) 22.8%,
     rgba(248, 217, 190, 0.411) 64.6%
   );
+}
+#code {
+  text-align: center;
 }
