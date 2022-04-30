@@ -4,12 +4,14 @@ h1 {
 }
 
 h2 {
-  color: grey;
+  color: #6a6a70;
   float: right;
 }
 
 .link {
   text-decoration: none;
+  cursor: default;
+  color: #121212;
 }
 
 #title {
@@ -17,7 +19,9 @@ h2 {
 }
 
 .units {
-  font-size: 50px;
+  position: relative;
+  font-size: 20px;
+  top: -40px;
 }
 
 .temp {
@@ -30,11 +34,16 @@ h2 {
   padding: 0;
 }
 
+#temperature {
+  color: #121212;
+}
+
 #extra {
   list-style-type: none;
   font-size: 25px;
   position: absolute;
-  right: 25px;
+  right: 350px;
+  top: 200px;
 }
 
 #description {
@@ -52,12 +61,15 @@ h2 {
   border-color: black;
   border-width: thick;
   box-sizing: border-box;
-  background: linear-gradient(
-    110.5deg,
-    rgba(240, 171, 240, 0.671) 22.8%,
-    rgba(248, 217, 190, 0.411) 64.6%
-  );
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 #code {
   text-align: center;
+}
+
+#search-button {
+  background-color: rgb(55, 15, 232);
+}
+#current-button {
+  background-color: green;
 }
