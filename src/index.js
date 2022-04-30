@@ -49,7 +49,9 @@ function showTemperature(response) {
   let wind = document.querySelector("#wind");
   let weatherdescript = document.querySelector("#description");
   let iconElement = document.querySelector("#icon");
+
   fahrenheitTemperature = response.data.main.temp;
+
   city.innerHTML = messagename;
   temperature.innerHTML = messagetemp;
   humid.innerHTML = messagehum;
@@ -89,15 +91,15 @@ function displayCelciusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
 
+let fahrenheitTemperature = null;
+
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-let fahrenheitTemperature = null;
-
-let celciusLink = document.querySelector("celcius-link");
+let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelciusTemperature);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
