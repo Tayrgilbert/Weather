@@ -49,7 +49,8 @@
               <span><img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                        alt="clear"
                        class="float-left"
-                       id="icon">
+                       id="icon"
+                       width="100px">
                       </span>
                         
               <div class="row">
@@ -58,8 +59,7 @@
                      <span class="temperature" id="temperature"></span>
                       <span class="units">
                          <a href="#" id="fahrenheit-link" class="link">°F</a> |
-                         <a href="#" id="celcius-link" class="link">°C</a>
-                                                 
+                         <a href="#" id="celcius-link" class="link">°C</a>                          
                       </span>
               </div>  
             </div>
@@ -82,41 +82,8 @@
             <br />
             <br />
                 </div>
-            <p class="days">
-              6 Day Forcast
-              <div class="row row-cols-6">
-                  <div class="col-2">
-                      Monday
-                      <div class = "emoji">🌧️</div>
-                      <div class = "degree">89°F</div>
-                  </div>
-                  <div class="col-2">
-                      Tuesday
-                      <div class = "emoji">🌞</div>
-                      <div class = "degree">78°F</div>
-                  </div>
-                  <div class="col-2">
-                      Wednesday
-                      <div class = "emoji">⛅</div>
-                      <div class = "degree">76°F</div>
-                  </div>
-                  <div class="col-2">
-                      Thursday
-                      <div class = "emoji">☀️</div>
-                      <div class = "degree">67°F</div>
-                  </div>
-                  <div class="col-2">
-                      Friday
-                      <div class = "emoji">⛈️</div>
-                      <div class = "degree">85°F</div>
-                  </div>
-                  <div class="col-2">
-                    Saturday
-                    <div class = "emoji">🌞</div>
-                      <div class = "degree">82°F</div>
-                  </div>
-              </div>
-            </p>
+            <div class="days" id="forecast"></div>
+            
            </div>
       </div>
      <p id="code" class="col-6">

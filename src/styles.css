@@ -50,8 +50,11 @@ h2 {
   text-transform: capitalize;
 }
 
-.days {
-  font-size: 40px;
+#forecast {
+  font-size: 30px;
+  left: 75px;
+  position: relative;
+  text-align: center;
 }
 
 .card {
