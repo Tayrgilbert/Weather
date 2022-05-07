@@ -8,17 +8,11 @@ h2 {
   float: right;
 }
 
-.link {
-  text-decoration: none;
-  cursor: default;
-  color: #121212;
-}
-
 #title {
   font-size: 50px;
 }
 
-.units {
+.unit {
   position: relative;
   font-size: 20px;
   top: -40px;
